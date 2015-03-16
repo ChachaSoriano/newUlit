@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CEAS Access Point</title>
+	<link rel="stylesheet" href="themes/mobiletheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="js/jquery.mobile.structure-1.4.3.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+	<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	
+	<script type="text/javascript" src="js/jquery_validate.js"></script>
+	
+	<script src="js/jquery.carouFredSel-5.5.0-packed.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="../source/scripts/js.js"></script>
+	<script type="text/javascript" src="../source/scripts/ui.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+		<link rel="stylesheet" href="sss.css" type="text/css" media="all">
+	<script src="jq.js"></script>
+<script src="sss.min.js"></script>
+<script>
+jQuery(function($) {
+$('.slider').sss();
+
+$('.section').click(function(e) {
+	e.preventDefault();
+
+	var loc = $(this).attr('href').substring(1);
+	var lock = $('#' + loc).offset().top;
+	$('body,html').animate({scrollTop:lock});
+});
+});
+</script>
+	
+	</head>
+	<body>
+	
+<!--MAIN PAGE-->
+<div data-role="page" id="index" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="fixed" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+	<div data-role="content" align="center" >
+	<img src="images/cap.png" width="100%" style="margin-top:-3%">
+	<br />
+	<a href="#vision" data-transition="pop"><img src="images/vmg.png" width="28%"></a>
+	<a href="#admission" data-transition="pop"><img src="images/admission.png" width="28%"></a>
+	<a href="#course" data-transition="pop"><img src="images/courses.png" width="28%"></a>
+	<a href="#calendar" data-transition="pop"><img src="images/calendar.png" width="28%"></a>
+	<a href="#portals" data-transition="pop"><img src="images/portals.png" width="28%"></a>
+	<a href="#gallery" data-transition="pop"><img src="images/gallery.png" width="28%"></a>
+	<a href="#contact" data-transition="pop"><img src="images/contact.png" width="28%"></a>
+	<a href="#about" data-transition="pop"><img src="images/about.png" width="28%"></a>
+	<a href="#help" data-transition="pop"><img src="images/help.png" width="28%"></a>
+	</div>
+</div>
+
+<!--portals-->
+<div data-role="page" id="portals" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="fixed" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+<img src="images/cap1.png" width="90%" /><br /><br />
+	<a href="http://gcaccesspoint.com/ceas/phpmobile/student/index.php"><img src="images/student.png" width="40%"></a>
+	<a href="http://gcaccesspoint.com/ceas/phpmobile/faculty/index.php"><img src="images/faculty.png" width="40%"></a>
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!--gallery-->
+<div data-role="page" id="gallery" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="fixed" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" class="jqm-content" align="center">
+		<img src="images/accomplishments.png" style="display: block;" width="100%" />
+		<div id="slideWrap">
+<div class="slider">
+<img src="images/accomplishment/2.jpg" />
+<img src="images/accomplishment/1.jpg" />
+<img src="images/accomplishment/3.jpg" />
+</div>
+</div>
+    </div>
+		
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-theme="f">
+		<ul>
+		<li><a href="#coordinators" data-icon="info" data-transition="pop">Coordinators</a></li>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+</div>
+
+
+<div data-role="page" id="coordinators" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="fixed" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" class="jqm-content" align="center">
+		<img src="images/coordinators.png" style="display: block;" width="100%" />
+		
+		<div id="slideWrap">
+<div class="slider">
+<img src="images/coordinator/1.jpg" />
+<img src="images/coordinator/2.jpg" />
+<img src="images/coordinator/3.jpg" />
+<img src="images/coordinator/4.jpg" />
+<img src="images/coordinator/5.jpg" />
+<img src="images/coordinator/6.jpg" />
+<img src="images/coordinator/7.jpg" />
+<img src="images/coordinator/8.jpg" />
+<img src="images/coordinator/9.jpg" />
+<img src="images/coordinator/10.jpg" />
+</div>
+</div>
+    </div>
+		
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-theme="f">
+		<ul>
+		<li><a href="#gallery" data-icon="star" data-transition="pop">Accomplishments</a></li>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+</div>
+
+<!--vision-->
+<div data-role="page" id="vision" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative"style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/vision.png" width="100%"></br>
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#mission" data-icon="carat-r" data-transition="slidefade">Next</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="mission" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/mission.png" width="100%"></br>
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#vision" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
+		<li><a href="#goals" data-icon="carat-r" data-transition="slidefade">Next</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="goals" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/goals.png" width="100%"></br>
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		<li><a href="#mission" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
+		
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+<!--programs-->
+<div data-role="page" id="course" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/course.png" width="100%"></br>
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!--contact-->
+<div data-role="page" id="contact" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/contactus.png" width="100%" />
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!--about-->
+<div data-role="page" id="about" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/aboutcap.png" width="100%" />
+
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#dev" data-icon="star" data-transition="slidefade"  >Developers</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!--developers-->
+<div data-role="page" id="dev" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/cache.png" width="100%" />
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#about" data-icon="info" data-transition="slidefade"  >About</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!--help-->
+<div data-role="page" id="help" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/help2.png" width="100%" />
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#help3" data-icon="carat-r" data-transition="slidefade">Next</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="help3" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/help3.png" width="100%" />
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#help" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
+		<li><a href="#help4" data-icon="carat-r" data-transition="slidefade">Next</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="help4" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/help4.png" width="100%" />
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#help3" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
+		<li><a href="#help5" data-icon="carat-r" data-transition="slidefade">Next</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="help5" data-theme="f" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<img src="images/help5.png" width="100%" /><br /><br />
+	For more information, visit our website: <a href="http://www.gcaccesspoint.com/ceas">Gordon College CEAS</a>
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop"  >Home</a></li>
+		<li><a href="#help4" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!--admission-->
+<div data-role="page" id="admission" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content">
+	<img src="images/enreq.png" width="100%" />
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		<li><a href="#enpro" data-icon="carat-r" data-transition="slidefade">Next</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="enpro" data-theme="f" data-position="fixed" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;">
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content">
+	<img src="images/enpro.png" width="100%" />
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar">
+		<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		<li><a href="#admission" data-icon="carat-l" data-transition="slidefade">Previous</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!--calendar-->
+<div data-role="page" id="calendar" data-theme="a" data-position="relative" style="background-image:url('images/bg1.png'); background-size:cover; background-repeat:no-repeat;" >
+<div data-role="header" data-theme="b" data-tap-toggle="false" align="center" data-position="relative" style="background-color:#085dad">
+ <img src="images/header1.png" style="display: block;" width="100%" />
+</div>
+<div data-role="content" align="center">
+	<p style="color:#000033;"><b>ACADEMIC YEAR 2014-2015</b></p>
+  <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnJune">
+    <h4><font face="Century Gothic">JUNE</font></h4>
+        <p id="june"><font color="#000033" face="Century Gothic">June 13,2014: CEAS Student’s General Orientation</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnJuly"> 
+ <h4><font face="Century Gothic">JULY</font></h4>
+  <p id="july"><font color="#000033" face="Century Gothic">July 14-20, 2014: Preliminary Examination<br /><br />
+	July 25, 2014: Council of Deans for the Colleges of Education III – Annual Student’s Assembly</font></p>	
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnAugust"> 
+   <h4><font face="Century Gothic">AUGUST</font></h4>	
+	<p><font color="#000033" face="Century Gothic">August 1, 2014: CEAS Acquaintance Day</font></p>
+	<p><font color="#000033" face="Century Gothic">August 26-31, 2014: Midterm Examination</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnSeptember"> 
+ <h4><font face="Century Gothic">SEPTEMBER</font></h4>	
+<p><font color="#000033" face="Century Gothic">September 3-5, 2014: Annual Gordon College Sports Festival</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnOctober"> 
+    <h4><font face="Century Gothic">OCTOBER</font></h4>	
+	<p><font color="#000033" face="Century Gothic">October 5, 2014: World Teachers Day</font></p>
+	<p><font color="#000033" face="Century Gothic">October 6 – 12, 2014: Final Examination</font></p>
+        <p><font color="#000033" face="Century Gothic">OCTOBER 20-24: IT Olympiad (Training) </font></p>
+	<p><font color="#000033" face="Century Gothic">OCTOBER 23-31: Registration/Enrollment Period</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnNovember"> 
+   <h4><font face="Century Gothic">NOVEMBER</font></h4>		 
+	<p><font color="#000033" face="Century Gothic">NOVEMBER 1: ALL SAINT'S DAY</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnDecember"> 
+    <h4><font face="Century Gothic">DECEMBER</font></h4>	
+	<p><font color="#000033" face="Century Gothic">December 8,2014: Student Teachers’  Convocation</font></p>
+	<p><font color="#000033" face="Century Gothic">December 13-17, 2014: Preliminary Examination</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnJanuary"> 
+    <h4><font face="Century Gothic">JANUARY 2015</font></h4>	
+	<p><font color="#000033" face="Century Gothic">January 14-15, 2015: CEAS Fun Day</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnFebruary"> 
+    <h4><font face="Century Gothic">FEBRUARY 2015</font></h4>
+	<p><font color="#000033" face="Century Gothic">February 2-7, 2015: Midterm Examination</font></p>
+	<p><font color="#000033" face="Century Gothic">Feb. 9-27, 2015: Final Demo Teaching of Student’s Teacher</font></p>
+	<p><font color="#000033" face="Century Gothic">Feb 16-18, 2015: 16th Gordon College Foundation Week</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnMarch"> 
+   <h4><font face="Century Gothic">MARCH 2015</font></h4>   
+   <p><font color="#000033" face="Century Gothic">March 9-14, 2015: Final Examination (Graduating)</font></p>
+	<p><font color="#000033" face="Century Gothic">March 23-29, 2014: Final Examination (Non- Graduating)</font></p>
+	<!--<p><font color="#000033" face="Century Gothic">MARCH: RECOGNITION</font></p>-->
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnMarch"> 
+   <h4><font face="Century Gothic">APRIL 2015</font></h4>   
+   <p><font color="#000033" face="Century Gothic">April 8, 2015: Commencement Exercises</font></p>
+   <p><font color="#000033" face="Century Gothic">April 8-10, 2015: Registration/Enrollment Period (for Summer Class) </font></p>
+   <p><font color="#000033" face="Century Gothic">April 13, 2015: Start Classes (for Summer Class)</font></p>
+   <p><font color="#000033" face="Century Gothic">April 29-30, 2015: Midterm Exam (for Summer Class)</font></p>
+</div>
+ <div data-role="collapsible" data-theme="a" data-content-theme="a" data-iconpos="right" id="btnMarch"> 
+   <h4><font face="Century Gothic">MAY 2015</font></h4>  
+   <p><font color="#000033" face="Century Gothic">May 21-22, 2015: Final Exam (for Summer Class)</font></p>
+</div>
+	<div data-role="footer" data-position="fixed" data-theme="f">
+	<div data-role="navbar" data-theme="f">
+	<ul>
+		<li><a href="#index" data-icon="home" data-transition="pop">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+<script>
+
+/* slide function for vmg */
+$("#vision").on("swipeleft",function(){
+	$.mobile.changePage( $("#mission"), { transition: "slide"} );
+});
+$("#mission").on("swipeleft",function(){
+	$.mobile.changePage( $("#goals"), { transition: "slide"} );
+});
+$("#goals").on("swiperight",function(){
+	$.mobile.changePage( $("#mission"), { transition: "slide", reverse:"true"} );
+});
+$("#mission").on("swiperight",function(){
+	$.mobile.changePage( $("#vision"), { transition: "slide", reverse:"true"} );
+});
+
+/*slide function for admission*/
+$("#admission").on("swipeleft",function(){
+	$.mobile.changePage( $("#enpro"), { transition: "slide"} );
+});
+$("#enpro").on("swiperight",function(){
+	$.mobile.changePage( $("#admission"), { transition: "slide", reverse:"true"} );
+});
+
+/*slide for about*/
+$("#about").on("swipeleft",function(){
+	$.mobile.changePage( $("#dev"), { transition: "slide"} );
+});
+$("#dev").on("swiperight",function(){
+	$.mobile.changePage( $("#about"), { transition: "slide", reverse:"true"} );
+});
+
+/* slide function for help */
+$("#help").on("swipeleft",function(){
+	$.mobile.changePage( $("#help3"), { transition: "slide"} );
+});
+$("#help3").on("swipeleft",function(){
+	$.mobile.changePage( $("#help4"), { transition: "slide"} );
+});
+$("#help4").on("swipeleft",function(){
+	$.mobile.changePage( $("#help5"), { transition: "slide"} );
+});
+$("#help5").on("swiperight",function(){
+	$.mobile.changePage( $("#help4"), { transition: "slide", reverse:"true"} );
+});
+$("#help4").on("swiperight",function(){
+	$.mobile.changePage( $("#help3"), { transition: "slide", reverse:"true"} );
+});
+$("#help3").on("swiperight",function(){
+	$.mobile.changePage( $("#help"), { transition: "slide", reverse:"true"} );
+});
+
+
+
+</script>
+
+</body>
+
+
+</html>
